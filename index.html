@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fahrenheit to Celsius Converter</title>
     <style>
-        /* Basic styles for the UI */
         body {
             font-family: Arial, sans-serif;
             text-align: center;
@@ -41,25 +40,21 @@
         <img src="https://cdn-icons-png.flaticon.com/512/3845/3845731.png" width="70px" height="70px" alt="Converter Icon">
         <h1>Fahrenheit to Celsius Converter</h1>
 
-        <!-- Input for Fahrenheit -->
         <input type="text" id="fahrenheit" placeholder="Enter Fahrenheit">
 
-        <!-- Button to convert -->
         <button onclick="convertToCelsius()">Convert</button>
 
-        <!-- Display the result -->
         <div id="result" class="result"></div>
     </div>
 
     <script>
-        // Conversion function
         function convertToCelsius() {
             const fahrenheit = document.getElementById('fahrenheit').value;
             const f = parseFloat(fahrenheit);
             let result;
             if (!isNaN(f)) {
                 const celsius = ((f - 32) * 5) / 9;
-                result = `Result: ${celsius.toFixed(2)}°C`; // Round to 2 decimal places
+                result = `Result: ${celsius.toFixed(2)}°C`; 
             } else {
                 result = 'Invalid Input';
             }
