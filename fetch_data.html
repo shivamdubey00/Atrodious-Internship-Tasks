@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub User Fetcher</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .loading {
+      font-size: 1.2rem;
+      color: #555;
+    }
+    .error {
+      color: red;
+    }
+    .user {
+      margin-top: 20px;
+    }
+    .user img {
+      border-radius: 50%;
+    }
+    .main-header{
+        display: flex;
+        padding: 20px;
+
+    }
+   .main-header img{
+    padding-top: 20px;
+    padding-left: 79px;
+
+   }
+   .main-header h1{
+    padding-left: 10px;
+   }
+   input{
+    border-radius: 5px;
+    font-size: 20px;
+
+   }
+   button{
+    height: 30px;
+    width: 100px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+   }
+   button:hover{
+
+    background-color: rgb(246, 255, 0);
+    color: black;
+    border: none;
+   }
+   h2{
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   }
+   p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   }
+  </style>
+</head>
+<body>
+<div class="main-header">
+  <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="40px" height="40px">
+  <h1>GitHub User Fetcher</h1>
+</div>
+<center>
+  <input type="text" id="username" placeholder="Enter GitHub username">
+  <button id="fetchBtn">Fetch User</button>
+
+  <div id="status"></div>
+  <div class="user" id="userData"></div>
+</center>
+  <script src="app.js"></script>
+</body>
+</html>
